@@ -1,0 +1,26 @@
+/* Corrected CSS */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  background-color: lightblue;
+  margin: 10px;
+  padding: 15px;
+}
+
+/*Example of a problematic selector */
+/*.item > * { /* Corrected: removed invalid selector*/
+  color: red;
+}*/
+
+/* Example of an ambiguous selector: */
+/*.item[data-id^=product] ~ * { /* Corrected: use a more specific selector to avoid unintended side effects */
+
+}*/
+
+/* Example of an invalid selector: */
+/* :invalid { /* Corrected: use a more valid selector */
+
+}*/
